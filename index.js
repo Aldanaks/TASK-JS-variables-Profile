@@ -11,11 +11,12 @@
 
 // Part 1 answer 👇🏻 ...
 
-
-
-
-
-
+let fullName = "Dana";
+let yearOfBirth = 1999;
+let hobby = "My hobby";
+let funFact = "My name is AlDana";
+let image =
+  "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGfpQ3m-QWiXgCBJJbrcUFdNdWAhj7rcUqjeNUC6eKcXZDAtWm";
 /**
  * Part 2: String Interpolation
  * Create the following new variables that interpolate
@@ -24,7 +25,7 @@
  * 1. fullNameString      -> assign it to: My name is {fullName}
  * 2. yearOfBirthString   -> assign it to: I am {YOUR_AGE}, and make sure you calculate your age from your year of birth
  * 3. hobbyString         -> assign it to: My hobby is {YOUR_HOBBY}
- * 
+ *
  * Uncomment the following lines and start interpolating.
  * You can uncomment a line by removing the // at the start
  */
@@ -33,8 +34,8 @@
 // const yearOfBirthString =
 // const hobbyString =
 
-
-
+let fullNameString = `my name is ${fullName}`;
+let yearOfBirthString = `I am ${2024 - yearOfBirth} `;
 
 /**
  * Part 3: Re-assignment
@@ -45,14 +46,18 @@ let stars = 0;
 
 function incrementBy1() {
   // Increment stars by 1 👇🏻
-}
-function decrementBy1() {
-  // decrement stars by 1 👇🏻
+  stars = stars + 1;
 }
 
+function decrementBy1() {
+  // decrement stars by 1 👇🏻
+  stars = stars - 1;
+}
 function incrementBy2() {
   // Increment stars by 2 👇🏻
+  stars = stars + 2;
 }
 function decrementBy2() {
   // decrement stars by 2 👇🏻
+  stars = stars - 2;
 }
